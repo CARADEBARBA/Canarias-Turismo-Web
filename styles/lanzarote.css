@@ -1,0 +1,155 @@
+/* Lanzarote - Estilos específicos */
+
+/* Variables CSS */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales para la página */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Encabezado */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de introducción */
+#introduccion {
+    padding: 20px;
+    text-align: center;
+}
+
+#introduccion h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#introduccion p {
+    font-size: 1.2rem;
+}
+
+/* Sección de atracciones */
+#atracciones {
+    padding: 20px;
+}
+
+#atracciones h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#atracciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#atracciones ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Sección de eventos */
+#eventos {
+    padding: 20px;
+}
+
+#eventos h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#eventos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#eventos ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #introduccion h1 {
+        font-size: 2rem;
+    }
+
+    #introduccion p, #atracciones ul li, #eventos ul li {
+        font-size: 1rem;
+    }
+}

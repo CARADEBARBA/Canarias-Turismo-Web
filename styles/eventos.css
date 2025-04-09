@@ -1,0 +1,209 @@
+/* Tenerife - Estilos específicos */
+
+/* Variables CSS */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales para la página */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Encabezado */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Título en el mapa */
+.titulo-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.titulo-texto {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Mapa interactivo */
+#mapa-interactivo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenido principal */
+main {
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+main h2 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para las islas (áreas clickeables) */
+.isla {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Añadido para un borde más suave */
+}
+
+.isla:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para las islas activas o seleccionadas */
+.isla.active {
+    background-color: #005fa3;
+    color: #fff;
+}
+
+/* Sección de eventos */
+#eventos {
+    padding: 20px;
+    text-align: center;
+}
+
+#eventos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#eventos p {
+    font-size: 1.2rem;
+}
+
+#eventos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#eventos ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #eventos h2 {
+        font-size: 2rem;
+    }
+
+    #eventos p, #eventos ul li {
+        font-size: 1rem;
+    }
+}

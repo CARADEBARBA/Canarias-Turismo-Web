@@ -1,0 +1,43 @@
+Folder PATH listing for volume OS
+Volume serial number is 4CA1-E320
+C:\USERS\ESABA\CANARIAS-TURISMO-WEB
+¦   .gitignore
+¦   estructura_proyecto.txt
+¦   index.html
+¦   LICENSE
+¦   README.md
+¦   uno.html
+¦   
++---assets
+¦       f.png
+¦       mapa-canarias.png
+¦       mapa-canarias.svg
+¦       Tenerife.png
+¦       
++---islas
+¦       el-hierro.html
+¦       fuerteventura.html
+¦       gran-canaria.html
+¦       la-gomera.html
+¦       la-palma.html
+¦       lanzarote.html
+¦       tenerife.html
+¦       
++---scripts
+¦       bienvenida.js
+¦       script.js
+¦       
++---styles
+        contacto.css
+        el-hierro.css
+        eventos.css
+        fuerteventura.css
+        gran-canaria.css
+        la-gomera.css
+        la-palma.css
+        lanzarote.css
+        main.css
+        mapa.css
+        style.css
+        tenerife.css
+        
